@@ -13,7 +13,7 @@ void setup()
 }
 void draw()
 {
-  for(int i = 0; i < array.length; i++){
+  for(int i = 0; i < particles.length; i++){
       particles[i].show();
       particles[i].move();
   }
@@ -24,13 +24,23 @@ class NormalParticle
 }
 interface Particle
 {
-  //your code here
+  public void show();
+  public void move();
 }
-class OddballParticle //uses an interface
+class OddballParticle implements Particle(){
 {
-  //your code here
+  public void show(){
+    //lots more java
+  }
+  public void move(){
+    //lots more java
+  }
+
 }
-class JumboParticle //uses inheritance
+class JumboParticle extends NormalParticle(){
 {
-  //your code here
+  public void show()
+  {
+
+  }
 }
