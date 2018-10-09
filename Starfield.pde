@@ -21,6 +21,9 @@ void draw()
 class NormalParticle
 {
   double myX,myY,myAngle,mySpeed;
+  double myX = myY = 30;
+  double myAngle = 
+  double mySpeed = 5;
 }
 interface Particle
 {
