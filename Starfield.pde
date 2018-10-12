@@ -76,9 +76,9 @@ class OddballParticle implements Particle
     myY = 250;
     myDir = Math.random()*2*Math.PI;
     mySpeed = Math.random()*6+1;
-    myR = (int)(Math.random() * 50) + 190;
+    myR = (int)(Math.random() * 50) + 180;
     myG = (int)(Math.random() * 100) + 70;
-    myB = (int)(Math.random() * 20) + 170;
+    myB = (int)(Math.random() * 20) + 160;
   }
   
   public void show()
