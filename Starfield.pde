@@ -1,4 +1,4 @@
-Particle [] tae = new Particle[1000];
+Particle [] tae = new Particle[5000];
 
 void setup()
 {
@@ -31,8 +31,8 @@ class NormalParticle implements Particle
     myY = 250;
     myDir = Math.random()*2*Math.PI;
     mySpeed = Math.random()*5+1;
-    myR = (int)(Math.random() * 50) + 200;
-    myG = (int)(Math.random() * 100) + 200;
+    myR = (int)(Math.random() * 50) + 250;
+    myG = (int)(Math.random() * 100) + 220;
     myB = (int)(Math.random() * 20) + 200;
   }
 
@@ -75,10 +75,10 @@ class OddballParticle implements Particle
     myX = 250;
     myY = 250;
     myDir = Math.random()*2*Math.PI;
-    mySpeed = Math.random()*6+1;
-    myR = (int)(Math.random() * 50) + 180;
-    myG = (int)(Math.random() * 100) + 70;
-    myB = (int)(Math.random() * 20) + 160;
+    mySpeed = Math.random()*3;
+    myR = (int)(Math.random() * 50) + 100;
+    myG = (int)(Math.random() * 100) + 138;
+    myB = (int)(Math.random() * 20) + 232;
   }
   
   public void show()
@@ -101,6 +101,6 @@ class JumboParticle extends NormalParticle
   void show()
   {
   fill((int)(Math.random() * 255));
-  ellipse((float)myX,(float)myY,50,50);
+  ellipse((float)myX,(float)myY,80,80);
   }
 }
